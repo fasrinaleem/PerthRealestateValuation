@@ -1,2 +1,3 @@
 # Ignore the specific file
 real_estate_model.pkl
+real_estate_scaler.pkl
