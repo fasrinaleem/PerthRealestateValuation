@@ -195,6 +195,5 @@ elif menu == "About":
     This application was developed as part of the ICT619 Artificial Intelligence course at Murdoch University.
     It predicts real estate prices based on property features using a machine learning model.
 
-    **Team:** R-Tech Solution  
     **Tech Stack:** Python, Streamlit, scikit-learn  
     """)
