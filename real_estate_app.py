@@ -191,9 +191,43 @@ elif menu == "Report":
 # -------------------- Page: About --------------------
 elif menu == "About":
     st.subheader("📚 About This App")
-    st.write("""
-    This application was developed as part of the ICT619 Artificial Intelligence course at Murdoch University.
-    It predicts real estate prices based on property features using a machine learning model.
+    st.markdown("""
+### 🏠 Perth Real Estate Price Predictor
 
-    **Tech Stack:** Python, Streamlit, scikit-learn  
+Developed as part of the **ICT619 Artificial Intelligence** course at *Murdoch University*, this app uses machine learning to estimate property prices and help users explore smart real estate decisions.
+
+---
+
+### 🔧 Key Features:
+- 🤖 **AI Prediction**: Estimate house prices using a trained Random Forest model  
+- 📐 **Feature Scaling**: Inputs normalized with StandardScaler  
+- 🗺️ **Investment Map**: Visualize properties across Perth using PyDeck  
+- 💰 **Budget Explorer**: Filter homes by price, age, and suburb  
+- 📊 **Dashboards**: View trends, distributions, and market metrics  
+- 📥 **CSV Export**: Download filtered recommendations
+
+---
+
+### 🛠️ Technologies Used:
+- 🐍 Python  
+- 🧪 Scikit-learn (ML & preprocessing)  
+- 🌐 Streamlit (Web interface)  
+- 📊 Matplotlib & PyDeck (Visualizations)  
+- 📁 Pandas, NumPy (Data processing)  
+- ☁️ Streamlit Cloud (Deployment)  
+- 🔐 Git & GitHub (Version control)
+
+---
+
+### 👥 Project Team:
+- 👨‍💻 Fasrin Aleem  
+- 👨‍💻 Rabinra Mahato  
+- 👩‍💻 Kushi   
+**Year:** 2025
+
+---
+
+### 🌐 GitHub Repository:
+🔗 [fasrinaleem/PerthRealestateValuation](https://github.com/fasrinaleem/PerthRealestateValuation)
     """)
+
