@@ -1,106 +1,130 @@
-# 🏠 Perth Real Estate Price Predictor
 
-An interactive AI-powered web application that predicts housing prices in Perth based on property features such as land size, floor area, location proximity, and more. Developed for the ICT619 Artificial Intelligence course at **Murdoch University**.
+# 🏠 Perth House Price Prediction App
 
-🔗 **Live App**: [perth-house-price-prediction.streamlit.app](https://perth-house-price-prediction.streamlit.app)
+A user-friendly and interactive web application built with **Streamlit** that predicts house prices in **Perth, Australia**, based on property features such as location, age, size, and accessibility. Developed as part of the ICT619 Artificial Intelligence course at **Murdoch University**.
+
+🔗 **Live App:** [perth-house-price-prediction.streamlit.app](https://perth-house-price-prediction.streamlit.app)  
+📁 **GitHub Repo:** [github.com/fasrinaleem/PerthRealestateValuation](https://github.com/fasrinaleem/PerthRealestateValuation)
 
 ---
 
 ## 🚀 Features
 
 ### 🔍 Price Prediction
-- Predicts house prices using a trained **Random Forest** regression model.
-- Inputs include: Year Built, Bedrooms, Bathrooms, Land & Floor Area, Distance to CBD & Station.
-- Feature scaling applied using **StandardScaler**.
+- Predicts property price using:
+  - House Age (from build year)
+  - Bedrooms and Bathrooms
+  - Land and Floor Area
+  - Distance to CBD and Station
+- Powered by a **Random Forest** model and **StandardScaler**.
 
-### 📊 Dashboard
-- Summary of all listings
-- 2x2 charts: Price Distribution, House Age vs Price, Distance to MRT, and Land Area vs Price
-- Price trend line by house age
+### 📊 Dashboard Overview
+- Displays insights from 400+ records
+- Highlights top 5 suburbs with best value-for-access ratio
+- Visual trend charts for house age and MRT access
 
-### 🧭 Investment Map
-- Interactive PyDeck map showing:
-  - 🔵 All properties
-  - 🟢 Top 5 value picks
-  - 🔴 Highest-priced property
-- Tooltips show address, price, and age
+### 🌏 Interactive Map
+- Uses PyDeck to display all properties
+- 🔵 All homes in blue  
+- 🟢 Top 5 picks highlighted in green  
+- 🔴 Most expensive home highlighted in red  
+- Hover tooltips include address, price, age, and MRT distance
 
 ### 💰 Budget Explorer
 - Filter properties by:
-  - Max Price
-  - Max Age
+  - Budget range
+  - Maximum house age
   - Suburb selection
-- Map highlights budget-matching properties
-- Export filtered data as CSV
-
-### 🏗️ Model Training
-- Features used:
-  - `House Age`, `BEDROOMS`, `BATHROOMS`, `LAND_AREA`, `FLOOR_AREA`, `CBD_DIST`, `NEAREST_STN_DIST`
-- Model: `RandomForestRegressor`
-- Scaler: `StandardScaler`
+- Download top-matching results as CSV
+- View filtered properties color-coded by price on the map
 
 ---
 
 ## 📂 Project Structure
 
 ```
-PerthRealestateValuation/
-├── real_estate_app.py                               # Streamlit app
-├── train_model.py                                   # Model training script
-├── Perth_Realestate_Dataset.csv                     # Main dataset
-├── real_estate_model.pkl                            # Trained model file (Ignored git)
-├── real_estate_scaler.pkl                           # Trained scaler (Ignored in git)
-├── style.css                                        # App styles
-├── requirements.txt                                 # Project dependencies
-└── README.md                                        # This file
+PERTHREALESTATEVALUATION/
+├── logo/
+│   └── RealStateLogo.jpeg       # App logo
+├── .gitignore                   # Ignore unnecessary files
+├── README.md                    # Project documentation
+├── instructions.txt             # Notes & setup guide
+├── Perth_Realestate_Dataset.csv# Main dataset
+├── real_estate_app.py          # Streamlit application
+├── train_model.py              # Model training script
+├── real_estate_model.pkl       # Trained ML model
+├── real_estate_scaler.pkl      # Scaler for feature normalization
+├── style.css                   # Custom app styles
+├── requirements.txt            # Project dependencies
 ```
 
 ---
 
-## 🧪 Dataset & Features
+## 🧠 Tech Stack
 
-| Feature               | Description                                 |
-|-----------------------|---------------------------------------------|
-| `ADDRESS`             | Street address of the property              |
-| `SUBURB`              | Suburb where the property is located        |
-| `PRICE`               | Final sale price (AUD)                      |
-| `BEDROOMS`            | Number of bedrooms                          |
-| `BATHROOMS`           | Number of bathrooms                         |
-| `LAND_AREA`           | Size of the land (sqm)                      |
-| `FLOOR_AREA`          | Size of internal floor area (sqm)           |
-| `BUILD_YEAR`          | Year the house was built                    |
-| `CBD_DIST`            | Distance to CBD (km)                        |
-| `NEAREST_STN_DIST`    | Distance to nearest station (meters)        |
-| `LATITUDE` / `LONGITUDE` | Coordinates for mapping                  |
-
-🧠 *Derived Feature*: `House Age = 2025 - BUILD_YEAR`
+| Tool           | Description                                  |
+|----------------|----------------------------------------------|
+| **Python**     | Backend development and ML modeling          |
+| **Streamlit**  | Web UI framework for real-time ML apps       |
+| **Scikit-learn** | Model training and feature scaling         |
+| **PyDeck**     | Map visualization using WebGL                |
+| **Geopy**      | Reverse geocoding for location names         |
+| **Pandas/Numpy** | Data manipulation and preprocessing        |
 
 ---
 
-## 🛠️ Technologies Used
+## 📊 Dataset Information
 
-| Technology        | What it’s for                     |
-|------------------|------------------------------------|
-| **Python**        | Core language                      |
-| **Streamlit**     | Web app framework                  |
-| **Scikit-learn**  | Machine learning                   |
-| **StandardScaler**| Feature normalization              |
-| **PyDeck**        | Interactive map visualizations     |
-| **Matplotlib**    | Charts and plots                   |
-| **Pandas/NumPy**  | Data manipulation                  |
-| **Git & GitHub**  | Version control                    |
-| **Streamlit Cloud** | Deployment platform              |
+**Source:** [Perth House Prices – Kaggle](https://www.kaggle.com/datasets/syuzai/perth-house-prices)
 
----
-
-## 👤 Authors
-
-**Fasrin Aleem**, **Rabinra Mahato**, **Kushi**  
-📘 Course: ICT619 Artificial Intelligence  
-🏫 Murdoch University – 2025
+| Column              | Description                            |
+|---------------------|----------------------------------------|
+| `BUILD_YEAR`        | Year the house was constructed          |
+| `BEDROOMS` / `BATHROOMS` | Number of rooms                   |
+| `LAND_AREA` / `FLOOR_AREA` | Property size in square meters |
+| `DISTANCE_TO_CBD`   | Distance to Perth CBD in kilometers     |
+| `NEAREST_STN_DIST`  | Distance to nearest train station in m  |
+| `PRICE`             | Selling price (target) in AUD           |
+| `LATITUDE/LONGITUDE`| Location coordinates                    |
+| `SUBURB`, `ADDRESS` | Human-readable location identifiers     |
 
 ---
 
-## 📃 License
+## ⚙️ How to Run Locally
 
-Open-source under MIT License / Academic use
+```bash
+# 1. Clone the repo
+git clone https://github.com/fasrinaleem/PerthRealestateValuation.git
+cd PerthRealestateValuation
+
+# 2. Install dependencies
+pip install -r requirements.txt
+
+# 3. (Optional) Train the model
+python train_model.py
+
+# 4. Launch the app
+streamlit run real_estate_app.py
+```
+
+---
+
+## 🧩 Challenges Faced
+
+- 🧭 Inconsistent location and address formats → resolved via column cleanup  
+- 📦 GitHub model upload issues → solved with **Git LFS**  
+- 🔄 Mismatch between model input and form data → fixed by aligning input features  
+- 🧪 Managing 400+ properties in a map → optimized using **PyDeck** filtering  
+- 🔐 GitHub authentication via HTTPS → resolved using SSH/PAT setup  
+
+---
+
+## 👨‍💻 Contributors
+
+- **Fasrin Aleem**
+- **Rabindra Mahato**
+- **Kushi**
+
+🎓 Course: ICT619 Artificial Intelligence  
+🏫 Institution: Murdoch University  
+📅 Year: 2025

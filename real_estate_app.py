@@ -184,17 +184,12 @@ elif menu == "Budget Explorer":
         st.warning("No properties match your budget criteria.")
 
 # -------------------- Page: Report --------------------
-elif menu == "Report":
-    st.subheader("📄 Report")
-    st.info("This section can be expanded with saved predictions, PDF generation, or export options.")
-
-# -------------------- Page: About --------------------
 elif menu == "About":
     st.subheader("📚 About This App")
     st.markdown("""
-### 🏠 Perth Real Estate Price Predictor
+### 🏠 Perth House Price Prediction
 
-Developed as part of the **ICT619 Artificial Intelligence** course at *Murdoch University*, this app uses machine learning to estimate property prices and help users explore smart real estate decisions.
+Developed as part of the **ICT619 Artificial Intelligence** course at *Murdoch University*, this app uses machine learning to estimate house prices and help users explore smart real estate decisions across Perth.
 
 ---
 
@@ -202,9 +197,11 @@ Developed as part of the **ICT619 Artificial Intelligence** course at *Murdoch U
 - 🤖 **AI Prediction**: Estimate house prices using a trained Random Forest model  
 - 📐 **Feature Scaling**: Inputs normalized with StandardScaler  
 - 🗺️ **Investment Map**: Visualize properties across Perth using PyDeck  
-- 💰 **Budget Explorer**: Filter homes by price, age, and suburb  
+- 💰 **Budget Explorer**: Filter houses by price, age, and suburb  
 - 📊 **Dashboards**: View trends, distributions, and market metrics  
-- 📥 **CSV Export**: Download filtered recommendations
+- 📥 **CSV Export**: Download filtered recommendations  
+- 📂 **Dataset Source**:  
+  🔗 [Perth House Prices on Kaggle](https://www.kaggle.com/datasets/syuzai/perth-house-prices)
 
 ---
 
@@ -222,7 +219,8 @@ Developed as part of the **ICT619 Artificial Intelligence** course at *Murdoch U
 ### 👥 Project Team:
 - 👨‍💻 Fasrin Aleem  
 - 👨‍💻 Rabinra Mahato  
-- 👩‍💻 Kushi   
+- 👩‍💻 Kushi  
+**Group:** R-Tech Solution  
 **Year:** 2025
 
 ---
