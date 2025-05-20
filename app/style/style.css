@@ -1,0 +1,118 @@
+/* Font: Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+html, body, [class*="css"] {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #f2f2f2;
+}
+
+/* Universal spacing */
+h1, h2, h3, h4 {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    color: #ccc;
+}
+
+.hero {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(8px);
+    padding: 1.5rem 2rem;
+    border-radius: 18px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Sidebar */
+.css-1lcbmhc, .css-hxt7ib {
+    background-color: #1a1f2b !important;
+    border-right: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Sidebar Logo */
+.sidebar .stImage > img {
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+/* Input Styling */
+input, textarea, select, .stTextInput input, .stNumberInput input, .stSelectbox select {
+    background-color: #2e3b4e !important;
+    color: white !important;
+    border-radius: 10px;
+    border: 1px solid #444 !important;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+}
+
+input:focus, textarea:focus {
+    border: 1px solid #00c6ff !important;
+    box-shadow: 0 0 8px #00c6ff66;
+}
+
+/* Button Styling */
+.stButton > button {
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    color: white;
+    font-weight: 600;
+    padding: 0.6rem 1.5rem;
+    border: none;
+    border-radius: 12px;
+    transition: all 0.3s ease-in-out;
+}
+
+.stButton > button:hover {
+    box-shadow: 0 0 20px rgba(0, 198, 255, 0.6);
+    transform: translateY(-2px);
+}
+
+/* Cards */
+.metric-card {
+    background-color: rgba(255, 255, 255, 0.06);
+    border-radius: 16px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 20px rgba(0,0,0,0.25);
+    border: 1px solid rgba(255,255,255,0.08);
+    text-align: center;
+}
+
+.metric-card h3 {
+    color: #ffffff;
+    margin-bottom: 0.25rem;
+}
+
+/* Forms */
+.stForm {
+    background: rgba(255, 255, 255, 0.04);
+    padding: 2rem;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+}
+
+/* Footer */
+.footer {
+    margin-top: 3rem;
+    font-size: 0.85rem;
+    text-align: center;
+    color: #aaa;
+}
+
+/* Tabs */
+[data-baseweb="tab"] {
+    background-color: #19232e !important;
+    color: #fff;
+    border-radius: 10px;
+}
+
+/* Highlighted Tab */
+[data-baseweb="tab-highlight"] {
+    background: linear-gradient(to right, #00c6ff, #0072ff) !important;
+    color: white !important;
+}

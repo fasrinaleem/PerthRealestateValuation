@@ -1,8 +1,10 @@
 streamlit
+streamlit-option-menu
 numpy
 pandas
 matplotlib
 scikit-learn
 joblib
 pydeck
-geopy
+xgboost
+plotly

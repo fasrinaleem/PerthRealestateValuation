@@ -1,0 +1,4 @@
+username,email,password_hash
+john,john,145366db4eda7806e482ba1a29372b96cd069e9a542f6a6ad2bb8a19c1d9599b
+alice,alice@doe.com,513e3b97a59fbbc335e422ccf09d011444d4b7c41fd136807529739c9b5dfcb0
+fasrinaleem,fazrinaleem@gmail.com,37c5c5ceab70a66297bd457256d3cc78bedf67d9715338f7c3c4ddcf0ff30ea6
