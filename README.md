@@ -3,7 +3,7 @@
 An intelligent and user-friendly web application built with Streamlit that predicts house prices in Perth, Australia, based on key features like house size, age, proximity to CBD/MRT, and more. Developed as part of the ICT619 Artificial Intelligence course at Murdoch University.
 
 🔗 **Live App**: [perth-house-price-prediction.streamlit.app](https://perth-house-price-prediction.streamlit.app)  
-📁 **GitHub Repo**: [github.com/fasrinaleem/PerthRealestateValuation](https://github.com/fasrinaleem/PerthRealestateValuation)
+📁 **GitHub Repo**: [github.com/fasrinaleem/PerthRealestateValuation](https://github.com/fasrinaleem/PerthRealestateValuation) 
 📊 **Source:** [Kaggle – Perth House Prices](https://www.kaggle.com/datasets/syuzai/perth-house-prices)
 
 
@@ -76,12 +76,11 @@ PerthRealestateValuation/
 
 ---
 └── README.md
-```
 
 ---
 
 ## 🚀 Installation
-
+```
 ```bash
 # Clone the repo
 git clone https://github.com/fasrinaleem/PerthRealestateValuation.git
